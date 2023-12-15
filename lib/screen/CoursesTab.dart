@@ -16,49 +16,53 @@ class _CoursesTabState extends State<CoursesTab> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                children: [
-                  Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                      color: Color(0xff262628),
+              SizedBox(height: 10,),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Color(0xff262628),
+                      ),
+                      child: Icon(Icons.file_open,color: Colors.grey,),
                     ),
-                    child: Icon(Icons.file_open,color: Colors.grey,),
-                  ),
-                  Spacer(),
-                  Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                      color: Color(0xff262628),
+                    Spacer(),
+                    Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Color(0xff262628),
+                      ),
+                      child: Icon(Icons.favorite_border,color: Colors.grey,),
                     ),
-                    child: Icon(Icons.favorite_border,color: Colors.grey,),
-                  ),
-                  Spacer(),
-                  Container(
-                    height: 40,
-                    width: 100,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                      color: Color(0xff262628),
+                    Spacer(),
+                    Container(
+                      height: 40,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Color(0xff262628),
+                      ),
+                      child: Center(child: Text("Google Ads",style: TextStyle(color: Colors.grey),)),
                     ),
-                    child: Center(child: Text("Google Ads",style: TextStyle(color: Colors.grey),)),
-                  ),
-                  Spacer(),
-                  Container(
-                    height: 40,
-                    width: 80,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                      color: Color(0xff262628),
+                    Spacer(),
+                    Container(
+                      height: 40,
+                      width: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Color(0xff262628),
+                      ),
+                      child: Center(child: Text("Accounts",style: TextStyle(color: Colors.grey),)),
                     ),
-                    child: Center(child: Text("Accounts",style: TextStyle(color: Colors.grey),)),
-                  ),
-                  SizedBox(width: 16,),
-                ],
+                    SizedBox(width: 16,),
+                  ],
+                ),
               ),
               Container(
                 height: 1300,

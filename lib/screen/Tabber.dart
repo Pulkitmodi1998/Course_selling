@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:november/CoursesTab.dart';
-import 'package:november/Lectures.dart';
+import 'package:november/screen/CoursesTab.dart';
+import 'package:november/screen/Lectures.dart';
+
 
 class Tabber extends StatefulWidget {
   const Tabber({Key? key}) : super(key: key);
@@ -43,7 +44,8 @@ class _TabberState extends State<Tabber> with SingleTickerProviderStateMixin {
                     child: Padding(
                       padding: const EdgeInsets.all(5),
                       child: TabBar(
-                        indicatorColor: Colors.white,
+                        dividerColor: Colors.transparent,
+                        indicatorColor: Colors.transparent,
                         indicatorWeight: 2,
                         indicator: BoxDecoration(
                           color: Colors.white,
@@ -53,24 +55,31 @@ class _TabberState extends State<Tabber> with SingleTickerProviderStateMixin {
                         indicatorSize: TabBarIndicatorSize.label, // Set indicator size to TabBarIndicatorSize.label
                         tabs: [
                           Tab(
-                            child: Text(
-                              'Courses',
-                              style: TextStyle(
-                                color: Color(0xff616161),
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'Mabry',
+                            child: Center(
+                              child: Text(
+                                'Courses',
+                                style: TextStyle(
+                                  color: Color(0xff616161),
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Mabry',
+                                ),
                               ),
                             ),
                           ),
                           Tab(
-                            child: Text(
-                              'Lectures',
-                              style: TextStyle(
-                                color: Color(0xff616161),
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'Mabry',
+                            child: Container(
+                              width: double.infinity,
+                              child: Center(
+                                child: Text(
+                                  'Lectures',
+                                  style: TextStyle(
+                                    // color: Color(0xff616161),
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Mabry',
+                                  ),
+                                ),
                               ),
                             ),
                           ),

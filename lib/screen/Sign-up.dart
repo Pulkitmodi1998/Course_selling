@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:november/Bottom.dart';
-import 'package:november/Homepage.dart';
+import 'package:november/screen/Bottom.dart';
+
+
 
 class Sign_up extends StatefulWidget {
   const Sign_up({super.key});
@@ -13,6 +14,7 @@ class _Sign_upState extends State<Sign_up> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
     body:Column(
     children: [
       SizedBox(height: 100,),

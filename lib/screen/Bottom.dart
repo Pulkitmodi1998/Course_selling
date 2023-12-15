@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:november/Career.dart';
-import 'package:november/Homepage.dart';
-import 'package:november/Profile.dart';
-import 'package:november/Tabber.dart';
+import 'package:november/screen/Career.dart';
+import 'package:november/screen/Homepage.dart';
+import 'package:november/screen/Profile.dart';
+import 'package:november/screen/Tabber.dart';
+
 
 class Bottom extends StatefulWidget {
   const Bottom({super.key});

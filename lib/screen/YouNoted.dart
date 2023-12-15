@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:november/Sign-up.dart';
+import 'package:november/screen/Sign-up.dart';
+
 
 class Younoted extends StatefulWidget {
   const Younoted({super.key});
